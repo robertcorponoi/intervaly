@@ -89,4 +89,14 @@ export default class Intervaly {
      * @private
      */
     private _tick;
+    /**
+     * Promisfies a function.
+     *
+     * @private
+     *
+     * @param {Function} fn The function to promisfy.
+     *
+     * @returns {Function} Returns the promisfied function.
+     */
+    private _promisfy;
 }

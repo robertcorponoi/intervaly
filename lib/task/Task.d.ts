@@ -37,18 +37,19 @@ export default class Task {
      *
      * @returns {string}
      */
-    readonly name: string;
+    get name(): string;
     /**
      * Gets the interval that this task runs at.
      *
      * @returns {number}
      */
+    get interval(): number;
     /**
-    * Sets a new interval for this task.
-    *
-    * @property {number} newInterval The new interval to set for this task.
-    */
-    interval: number;
+     * Sets a new interval for this task.
+     *
+     * @property {number} newInterval The new interval to set for this task.
+     */
+    set interval(newInterval: number);
     /**
      * Runs the function associated with this task.
      */
