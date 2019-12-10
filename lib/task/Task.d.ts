@@ -39,6 +39,12 @@ export default class Task {
      */
     get name(): string;
     /**
+     * Gets the function associated with this task.
+     *
+     * @returns {Function}
+     */
+    get fn(): Function;
+    /**
      * Gets the interval that this task runs at.
      *
      * @returns {number}

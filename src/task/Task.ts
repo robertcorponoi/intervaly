@@ -52,33 +52,28 @@ export default class Task {
    * 
    * @returns {string}
    */
-  get name(): string {
+  get name(): string { return this._name; }
 
-    return this._name;
-
-  }
+  /**
+   * Gets the function associated with this task.
+   * 
+   * @returns {Function}
+   */
+  get fn(): Function { return this._fn; }
 
   /**
    * Gets the interval that this task runs at.
    * 
    * @returns {number}
    */
-  get interval(): number {
-
-    return this._interval;
-
-  }
+  get interval(): number { return this._interval; }
 
   /**
    * Sets a new interval for this task.
    * 
    * @property {number} newInterval The new interval to set for this task.
    */
-  set interval(newInterval: number) {
-
-    this._interval = newInterval;
-
-  }
+  set interval(newInterval: number) { this._interval = newInterval; }
 
   /**
    * Runs the function associated with this task.

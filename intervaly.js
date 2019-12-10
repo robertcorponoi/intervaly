@@ -102,6 +102,17 @@ function () {
       return this._name;
     }
     /**
+     * Gets the function associated with this task.
+     * 
+     * @returns {Function}
+     */
+
+  }, {
+    key: "fn",
+    get: function get() {
+      return this._fn;
+    }
+    /**
      * Gets the interval that this task runs at.
      * 
      * @returns {number}
@@ -318,8 +329,7 @@ function () {
       this._expected += this._interval;
 
       this._tasks.map(function (task) {
-        if (_this2._elapsed === 0) return; // console.log(this._elapsed, task.interval, this._elapsed % task.interval === 0);
-
+        if (_this2._elapsed === 0) return;
         if (_this2._elapsed % task.interval === 0) task.run();
       });
 

@@ -1,6 +1,6 @@
 {
   "name": "intervaly",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Run any function on an interval using the more reliable setTimeout strategy.",
   "main": "index.js",
   "module": "intervaly.js",
@@ -29,19 +29,19 @@
   "author": "Robert Corponoi",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
-    "@babel/plugin-proposal-class-properties": "^7.7.0",
-    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/preset-typescript": "^7.7.2",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-typescript": "^7.7.4",
     "ava": "^2.4.0",
-    "rollup": "^1.27.2",
+    "rollup": "^1.27.9",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "sinon": "^7.5.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.3"
   }
 }

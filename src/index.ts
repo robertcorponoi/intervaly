@@ -148,8 +148,6 @@ export default class Intervaly {
 
       if (this._elapsed === 0) return;
 
-      // console.log(this._elapsed, task.interval, this._elapsed % task.interval === 0);
-
       if (this._elapsed % task.interval === 0) task.run();
 
     });
